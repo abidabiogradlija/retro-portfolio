@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import Container from "../layouts/Container";
 import RetroButton from "../components/RetroButton";
 import StarBackground from "../components/StarBackground";
+import PlayerProfile from "../sections/PlayerProfile";
+import SkillTree from "../sections/SkillTree";
+import Experience from "../sections/Experience";
+
+
 
 export default function Home() {
   return (
@@ -98,8 +103,12 @@ export default function Home() {
           </div>
 
         </section>
-
       </Container>
+      <PlayerProfile />
+      <SkillTree />
+      <Experience />
+
+
     </motion.main>
   );
 }
