@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 import Container from "../layouts/Container";
-import RetroCard from "../components/RetroCard";
 import RetroButton from "../components/RetroButton";
 import StarBackground from "../components/StarBackground";
 
@@ -11,52 +10,95 @@ export default function Home() {
       className="relative min-h-screen overflow-hidden bg-midnight"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{
-        duration: 0.6,
-        ease: "easeOut",
-      }}
+      transition={{ duration: 0.6 }}
     >
       <StarBackground />
 
       <Container className="relative z-10 flex min-h-screen items-center justify-center">
-        <RetroCard className="w-full max-w-4xl">
 
-          <div className="text-center">
+        <section className="w-full max-w-5xl text-center">
 
-            <p className="font-terminal text-retro-gold tracking-[0.35em] text-sm mb-3">
-              PLAYER PROFILE
-            </p>
+          {/* PLAYER */}
+          <p className="font-retro text-retro-gold text-lg tracking-[0.7em]">
+            PLAYER
+          </p>
 
-            <h1 className="font-retro text-6xl text-retro-gold leading-tight">
-              ABIDA
-              <br />
-              BIOGRADLIJA
-            </h1>
+          {/* NAME */}
+          <h1 className="crt-title font-retro text-6xl md:text-7xl lg:text-8xl leading-none">
+            ABIDA
+            <br />
+            BIOGRADLIJA
+          </h1>
 
-            <p className="mt-8 font-body text-xl text-ivory">
-              Software Engineer
-            </p>
+          {/* TOP LINE */}
+          <div className="mx-auto mt-10 h-px w-full bg-retro-gold/20" />
 
-            <p className="mt-3 font-body text-muted max-w-2xl mx-auto leading-8">
-              Building elegant web experiences with React,
-              Laravel, Node.js and modern technologies.
-            </p>
+          {/* CLASS + LEVEL */}
+          <div className="mt-10 grid grid-cols-2 gap-10">
 
-            <div className="mt-10 flex justify-center gap-5">
+            <div>
+              <p className="font-terminal uppercase tracking-[0.35em] text-retro-gold text-lg">
+                CLASS
+              </p>
 
-              <RetroButton>
-                VIEW QUEST
-              </RetroButton>
+              <p className="mt-3 font-body text-3xl text-ivory">
+                Software Engineer
+              </p>
+            </div>
 
-              <RetroButton variant="secondary">
-                DOWNLOAD CV
-              </RetroButton>
+            <div>
+              <p className="font-terminal uppercase tracking-[0.35em] text-retro-gold text-lg">
+                LEVEL
+              </p>
 
+              <p className="mt-3 font-body text-3xl text-ivory">
+                23
+              </p>
             </div>
 
           </div>
 
-        </RetroCard>
+          {/* MIDDLE LINE */}
+          <div className="mx-auto mt-10 h-px w-full bg-retro-gold/20" />
+
+          {/* QUEST */}
+          <div className="mt-10">
+
+            <p className="font-terminal uppercase tracking-[0.35em] text-retro-gold text-lg">
+              CURRENT QUEST
+            </p>
+
+            <p className="mt-5 font-body text-2xl text-ivory leading-10">
+              Looking for the next opportunity
+              <br />
+              to build impactful software.
+            </p>
+
+          </div>
+
+          {/* BOTTOM LINE */}
+          <div className="mx-auto mt-10 h-px w-full bg-retro-gold/20" />
+
+          {/* BUTTONS */}
+          <div className="mt-12 flex justify-center gap-8">
+
+            <RetroButton>
+              VIEW PROFILE
+            </RetroButton>
+
+            <RetroButton variant="secondary">
+              DOWNLOAD CV
+            </RetroButton>
+
+          </div>
+
+          {/* SCROLL */}
+          <div className="mt-16 animate-bounce text-retro-gold text-3xl">
+            ↓
+          </div>
+
+        </section>
+
       </Container>
     </motion.main>
   );

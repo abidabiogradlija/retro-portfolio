@@ -75,11 +75,34 @@
 
   background-image: repeating-linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.03) 0px,
-    rgba(255, 255, 255, 0.03) 1px,
+    rgba(240, 209, 125, 0.12) 0px,
+    rgba(240, 209, 125, 0.12) 1px,
     transparent 2px,
-    transparent 4px
+    transparent 3px
+  );
+  opacity: 0.25;
+
+}
+/* =========================================================
+   CRT TITLE
+========================================================= */
+
+.crt-title {
+  background: repeating-linear-gradient(
+    to bottom,
+    #f0d17d 0px,
+    #f0d17d 3px,
+    #d8b45a 4px,
+    #f0d17d 6px
   );
 
-  opacity: 0.25;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  text-shadow:
+    1px 0 rgba(255, 60, 60, 0.15),
+   -1px 0 rgba(80, 180, 255, 0.15),
+    0 0 10px rgba(240, 209, 125, 0.08);
 }

@@ -2,7 +2,6 @@ import { useState } from "react";
 import RetroButton from "../components/RetroButton";
 import BootSequence from "../components/BootSequence";
 import StarBackground from "../components/StarBackground";
-import CRTOverlay from "../components/CRTOverlay";
 import { motion } from "framer-motion";
 import clickSound from "../assets/sounds/click.mp3";
 import useSound from "../hooks/useSound";
@@ -48,7 +47,6 @@ export default function IntroScreen({ onStart }) {
           ease: "easeOut",
         }}
       >
-      <CRTOverlay />
 
         <p className="font-terminal text-3xl text-retro-gold">
           PLAYER ONE OS v1.0
