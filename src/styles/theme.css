@@ -17,4 +17,14 @@
 
   --color-purple-glow: #5647A7;
 
+  /* ==========================
+   FONTS
+========================== */
+
+--font-retro: "Press Start 2P", monospace;
+
+--font-body: "IBM Plex Mono", monospace;
+
+--font-terminal: "VT323", monospace;
+
 }
