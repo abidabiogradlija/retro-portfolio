@@ -22,13 +22,23 @@ export default function RetroButton({
         px-8
         py-4
         rounded-xl
-        font-semibold
+
+        font-retro
+        text-lg
+        tracking-widest
+        uppercase
+
         transition-all
         duration-300
+
         hover:scale-105
+        hover:shadow-[0_0_18px_rgba(240,209,125,0.45)]
+
         active:scale-95
-        disabled:opacity-50
+
+        disabled:opacity-60
         disabled:cursor-not-allowed
+
         ${variants[variant]}
       `}
     >

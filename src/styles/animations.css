@@ -65,3 +65,21 @@
 
   animation: twinkle 3s ease-in-out infinite;
 }
+/* =========================================================
+   CRT SCANLINES
+========================================================= */
+
+.crt-lines {
+  position: absolute;
+  inset: 0;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+
+  opacity: 0.25;
+}
