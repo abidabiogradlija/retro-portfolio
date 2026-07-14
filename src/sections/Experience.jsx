@@ -28,7 +28,7 @@ export default function Experience() {
       <Container>
 
         <h2 className="text-center font-retro text-5xl text-retro-gold">
-          EXPERIENCE & ACHIEVEMENTS
+          EXPERIENCE
         </h2>
 
         <div className="mx-auto mt-16 max-w-5xl">
