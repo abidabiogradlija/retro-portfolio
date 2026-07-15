@@ -29,7 +29,7 @@ export default function Hero() {
 
         {/* CLASS + LEVEL */}
 
-        <div className="mt-8 grid grid-cols-2 gap-10">
+        <div className="mt-5 grid grid-cols-2 gap-10">
 
           <div>
 
@@ -69,7 +69,7 @@ export default function Hero() {
             CURRENT QUEST
           </p>
 
-          <p className="mt-5 font-body text-2xl leading-10 text-ivory">
+          <p className="mt-3 font-body text-2xl leading-10 text-ivory">
             Looking for the next opportunity
             <br />
             to build impactful software.
@@ -83,7 +83,7 @@ export default function Hero() {
 
         {/* BUTTONS */}
 
-        <div className="mt-10 flex justify-center gap-8">
+        <div className="mt-8 flex justify-center gap-8">
 
           <RetroButton
             onClick={() =>
