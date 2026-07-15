@@ -49,7 +49,7 @@ export default function IntroScreen({ onStart }) {
       >
 
         <p className="font-terminal text-3xl text-retro-gold">
-          PLAYER ONE OS v1.0
+          PLAYER ONE CV v1.0
         </p>
 
         <div className="mt-8">

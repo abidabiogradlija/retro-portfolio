@@ -33,10 +33,10 @@ export default function Hero() {
           leading-none
           tracking-tight
 
-          text-5xl
-          sm:text-6xl
-          md:text-7xl
-          xl:text-8xl
+          text-4xl
+          sm:text-5xl
+          md:text-6xl
+          xl:text-7xl
           "
         >
           ABIDA
@@ -46,13 +46,15 @@ export default function Hero() {
 
         {/* TOP LINE */}
 
-        <div className="mx-auto mt-8 h-px w-full bg-retro-gold/20" />
+        <div className="mx-auto mt-5 sm:mt-6 lg:mt-8 h-px w-full bg-retro-gold/20" />
 
         {/* CLASS + LEVEL */}
 
         <div
         className="
-        mt-8
+        mt-5
+        sm:mt-6
+l       g:mt-8
 
         grid
         grid-cols-1
@@ -90,11 +92,11 @@ export default function Hero() {
 
         {/* MIDDLE LINE */}
 
-        <div className="mx-auto mt-8 h-px w-full bg-retro-gold/20" />
+        <div className="mx-auto mt-5 sm:mt-6 lg:mt-8 h-px w-full bg-retro-gold/20" />
 
         {/* QUEST */}
 
-        <div className="mt-8">
+        <div className="mt-5 sm:mt-6 lg:mt-8">
 
           <p className="font-terminal text-lg uppercase tracking-[0.35em] text-retro-gold">
             CURRENT QUEST
@@ -121,12 +123,14 @@ export default function Hero() {
 
         {/* BOTTOM LINE */}
 
-        <div className="mx-auto mt-8 h-px w-full bg-retro-gold/20" />
+        <div className="mx-auto mt-5 sm:mt-6 lg:mt-8 h-px w-full bg-retro-gold/20" />
 
         {/* BUTTONS */}
 
         <div className="
-          mt-10
+          mt-5
+          sm:mt-8
+          lg:mt-10
 
           flex
 
@@ -142,13 +146,13 @@ export default function Hero() {
           <RetroButton
             onClick={() =>
                 document
-                .getElementById("profile")
+                .getElementById("contact")
                 ?.scrollIntoView({
                 behavior: "smooth",
                 })
             }
           >
-            VIEW PROFILE
+            CONTACT ME
           </RetroButton>
 
           <RetroButton
@@ -161,14 +165,14 @@ export default function Hero() {
             )
             }
           >
-            DOWNLOAD CV.PDF
+            DOWNLOAD CV
           </RetroButton>
 
         </div>
 
         {/* SCROLL */}
 
-        <div className="mt-8 sm:mt-10 animate-bounce text-3xl text-retro-gold">
+        <div className="mt-6 sm:mt-10 animate-bounce text-3xl text-retro-gold">
           ↓
         </div>
 

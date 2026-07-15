@@ -223,7 +223,7 @@ export default function ProfileInfo() {
             text-ivory
           "
         >
-          https://www.upwork.com/freelancers/abidab11
+          https://www.upwork.com/freelancers/abidab11?mp_source=share
         </p>
       </div>
     </div>
