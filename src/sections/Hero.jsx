@@ -82,7 +82,7 @@ l       g:mt-8
               LEVEL
             </p>
 
-            <p className="mt-3 font-body text-3xl text-ivory">
+            <p className="mt-3 font-body text-xl sm:text-2xl lg:text-3xl text-ivory">
               23
             </p>
 
