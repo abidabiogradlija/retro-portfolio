@@ -62,8 +62,8 @@ export default function ProjectSlider({
 
         ${
           type === "mobile"
-            ? "h-full max-h-[560px] w-auto"
-            : "max-w-full max-h-[520px]"
+          ? "w-auto max-h-full"
+          : "max-w-full max-h-[520px]"
         }
     `}
   />
