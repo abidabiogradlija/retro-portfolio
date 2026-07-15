@@ -134,9 +134,9 @@ export default function ProfileInfo() {
 
             font-body
 
-            text-base
-            sm:text-lg
-            lg:text-xl
+            text-lg 
+            sm:text-xl 
+            lg:text-2xl
 
             text-ivory
           "
@@ -175,9 +175,9 @@ export default function ProfileInfo() {
 
             font-body
 
-            text-base
-            sm:text-lg
-            lg:text-xl
+            text-lg 
+            sm:text-xl 
+            lg:text-2xl
 
             text-ivory
           "
@@ -216,9 +216,9 @@ export default function ProfileInfo() {
 
             font-body
 
-            text-base
-            sm:text-lg
-            lg:text-xl
+            text-lg 
+            sm:text-xl 
+            lg:text-2xl
 
             text-ivory
           "
