@@ -114,7 +114,7 @@ export default function Hero() {
 
         {/* SCROLL */}
 
-        <div className="mt-16 animate-bounce text-3xl text-retro-gold">
+        <div className="mt-8 animate-bounce text-3xl text-retro-gold">
           ↓
         </div>
 
