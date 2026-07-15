@@ -204,11 +204,34 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="bg-midnight py-32">
+    <section
+      className="
+        bg-midnight
 
+        py-20
+        md:py-24
+        lg:py-32
+      "
+    >
       <Container>
 
-        <h2 className="mb-20 text-center font-retro text-5xl text-retro-gold">
+        <h2
+          className="
+            mb-10
+            md:mb-16
+            lg:mb-20
+
+            text-center
+
+            font-retro
+
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+
+            text-retro-gold
+          "
+        >
           PROJECT INVENTORY
         </h2>
 
@@ -220,7 +243,6 @@ export default function Projects() {
         ))}
 
       </Container>
-
     </section>
   );
 }

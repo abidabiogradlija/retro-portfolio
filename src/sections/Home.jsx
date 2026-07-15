@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import Container from "../layouts/Container";
 import RetroButton from "../components/RetroButton";
 import StarBackground from "../components/StarBackground";
+import Hero from "../sections/Hero";
 import PlayerProfile from "../sections/PlayerProfile";
 import SkillTree from "../sections/SkillTree";
 import Experience from "../sections/Experience";
 import Education from "../sections/Education";
 import Projects from "../sections/Projects";
-import Hero from "../sections/Hero";
 import Contact from "../sections/Contact";
 
 

@@ -19,13 +19,24 @@ export default function RetroButton({
       disabled={disabled}
       onClick={onClick}
       className={`
-        px-8
-        py-4
+        w-full
+        sm:w-auto
+
+        px-6
+        sm:px-8
+
+        py-3
+        sm:py-4
+
         rounded-xl
 
         font-retro
-        text-lg
-        tracking-widest
+
+        text-sm
+        sm:text-base
+        lg:text-lg
+
+        tracking-[0.2em]
         uppercase
 
         transition-all

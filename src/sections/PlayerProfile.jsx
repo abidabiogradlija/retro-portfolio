@@ -7,25 +7,80 @@ export default function PlayerProfile() {
   return (
     <section
       id="profile"
-      className="bg-midnight py-32"
+      className="
+        bg-midnight
+
+        py-20
+        md:py-24
+        lg:py-32
+      "
     >
       <Container>
 
-        <h2 className="mb-16 text-center font-retro text-5xl text-retro-gold">
+        {/* TITLE */}
+
+        <h2
+          className="
+            text-center
+
+            font-retro
+
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+
+            text-retro-gold
+          "
+        >
           PLAYER PROFILE
         </h2>
 
-        <div className="mb-12 h-px bg-retro-gold/20" />
+        {/* LINE */}
 
-        <div className="grid gap-16 lg:grid-cols-2">
+        <div className="mx-auto mt-8 mb-10 h-px w-full bg-retro-gold/20" />
 
-          <ProfileImage />
+        {/* IMAGE + INFO */}
 
-          <ProfileInfo />
+        <div
+          className="
+            grid
+
+            grid-cols-1
+
+            items-center
+
+            gap-12
+
+            xl:grid-cols-2
+            xl:gap-16
+          "
+        >
+
+          {/* IMAGE */}
+
+          <div className="flex justify-center">
+
+            <ProfileImage />
+
+          </div>
+
+          {/* INFO */}
+
+          <div className="w-full">
+
+            <ProfileInfo />
+
+          </div>
 
         </div>
 
-        <AboutMe />
+        {/* ABOUT */}
+
+        <div className="mt-14 md:mt-20">
+
+          <AboutMe />
+
+        </div>
 
       </Container>
     </section>

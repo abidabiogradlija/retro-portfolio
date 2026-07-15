@@ -10,8 +10,8 @@ export default function RetroMonitor({
         w-full
         ${
           type === "desktop"
-            ? "max-w-[1050px]"
-            : "max-w-[650px]"
+          ? "max-w-[1050px]"
+          : "max-w-[420px] sm:max-w-[520px] md:max-w-[650px]"
         }
       `}
     >
@@ -25,18 +25,28 @@ export default function RetroMonitor({
 
           grid
 
-          grid-cols-[1fr_105px]
+          grid-cols-[1fr_70px]
+          sm:grid-cols-[1fr_85px]
+          lg:grid-cols-[1fr_105px]
 
-          gap-5
+          gap-3
+          sm:gap-4
+          lg:gap-5
 
-          rounded-[36px]
+          rounded-[24px]
+          sm:rounded-[30px]
+          lg:rounded-[36px]
 
-          border-[5px]
+          border-[3px]
+          sm:border-[4px]
+          lg:border-[5px]
           border-retro-gold/40
 
           bg-[#1A2B4D]
 
-          p-5
+          p-3
+          sm:p-4
+          lg:p-5
 
           shadow-[0_20px_60px_rgba(0,0,0,.45)]
         "
@@ -147,7 +157,12 @@ export default function RetroMonitor({
 
               <div
                 key={index}
-                className="h-[2px] w-14 rounded-full bg-retro-gold/60"
+                className="
+                  h-[2px] w-8
+                  sm:w-10
+                  md:w-12
+                  lg:w-14 rounded-full bg-retro-gold/60
+                  "
               />
 
             ))}
@@ -161,8 +176,12 @@ export default function RetroMonitor({
               mt-8
 
               flex
-              h-16
-              w-16
+              h-12
+              w-12
+              sm:h-14
+              sm:w-14
+              lg:h-16
+              lg:w-16
 
               items-center
               justify-center
@@ -187,8 +206,12 @@ export default function RetroMonitor({
               mt-6
 
               flex
-              h-12
-              w-12
+              h-10
+              w-10
+              sm:h-11
+              sm:w-11
+              lg:h-12
+              lg:w-12
 
               items-center
               justify-center
@@ -212,8 +235,10 @@ export default function RetroMonitor({
             className="
               mt-8
 
-              h-3
-              w-3
+              h-2
+              w-2
+              sm:h-3
+              sm:w-3
 
               rounded-full
 

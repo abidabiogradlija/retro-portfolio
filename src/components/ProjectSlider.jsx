@@ -62,8 +62,8 @@ export default function ProjectSlider({
 
         ${
           type === "mobile"
-          ? "h-full w-auto"
-          : "max-w-full max-h-[520px]"
+            ? "h-full max-h-[560px] w-auto"
+            : "max-w-full max-h-[520px]"
         }
     `}
   />
@@ -93,7 +93,23 @@ export default function ProjectSlider({
            ←
           </button>
 
-          <div className="flex gap-4">
+          <div
+            className="
+              flex
+
+              max-w-full
+
+              gap-2
+              sm:gap-4
+
+              overflow-x-auto
+              overflow-y-hidden
+
+              px-2
+
+              scrollbar-hide
+            "
+          >
 
            {images.map((image, index) => (
 
@@ -124,8 +140,11 @@ export default function ProjectSlider({
               src={image}
               alt=""
               className="
-                h-16
-                w-24
+                h-12
+                w-20
+
+                sm:h-16
+                sm:w-24
 
                 bg-black
 
@@ -140,10 +159,11 @@ export default function ProjectSlider({
         </div>
 
         <button
-        onClick={next}
-        className="
+          onClick={next}
+          className="
           font-terminal
-          text-3xl
+          text-2xl
+          sm:text-3xl
           text-retro-gold
           transition
           hover:scale-125
@@ -188,10 +208,11 @@ export default function ProjectSlider({
         }}
         className="
           absolute
-          left-6
+          left-2
+          sm:left-6
 
-          text-6xl
-
+          text-4xl
+          sm:text-6xl
           text-retro-gold
 
           transition
@@ -229,9 +250,11 @@ export default function ProjectSlider({
         }}
         className="
           absolute
-          right-6
+          right-2
+          sm:right-6
 
-          text-6xl
+          text-4xl
+          sm:text-6xl
 
           text-retro-gold
 
@@ -251,10 +274,14 @@ export default function ProjectSlider({
       onClick={() => setPreviewOpen(false)}
       className="
         absolute
-        top-6
-        right-8
+        top-3
+        right-4
 
-        text-5xl
+        sm:top-6
+        sm:right-8
+
+        text-3xl
+        sm:text-5xl
 
         text-retro-gold
 

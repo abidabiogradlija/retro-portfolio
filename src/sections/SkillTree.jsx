@@ -58,15 +58,54 @@ const categories = [
 
 export default function SkillTree() {
   return (
-    <section className="bg-midnight py-32">
+    <section
+      className="
+        bg-midnight
 
+        py-20
+        md:py-24
+        lg:py-32
+      "
+    >
       <Container>
 
-        <h2 className="mb-20 text-center font-retro text-5xl text-retro-gold">
+        {/* TITLE */}
+
+        <h2
+          className="
+            text-center
+
+            font-retro
+
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+
+            text-retro-gold
+          "
+        >
           SKILL TREE
         </h2>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        {/* LINE */}
+
+        <div className="mx-auto mt-8 mb-12 h-px w-full bg-retro-gold/20" />
+
+        {/* GRID */}
+
+        <div
+          className="
+            grid
+
+            grid-cols-1
+
+            gap-6
+
+            md:grid-cols-2
+
+            lg:gap-8
+          "
+        >
 
           {categories.map((category) => (
             <SkillCard
@@ -79,7 +118,6 @@ export default function SkillTree() {
         </div>
 
       </Container>
-
     </section>
   );
 }

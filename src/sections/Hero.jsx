@@ -5,18 +5,39 @@ export default function Hero() {
   return (
     <Container className="relative z-10 flex min-h-screen items-center justify-center">
 
-      <section className="w-full max-w-5xl text-center">
+    <section
+      className="
+        mx-auto
+        w-full
+        max-w-5xl
 
+        text-center
+
+        py-16
+        sm:py-20
+        lg:py-0
+      "
+    >
         {/* PLAYER */}
 
-        <p className="font-retro text-lg tracking-[0.7em] text-retro-gold">
+        <p className="font-retro text-sm sm:text-base lg:text-lg tracking-[0.7em] text-retro-gold">
           PLAYER
         </p>
 
         {/* NAME */}
 
         <h1 
-          className="crt-title font-retro text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-none"
+          className="
+          crt-title
+          font-retro
+          leading-none
+          tracking-tight
+
+          text-5xl
+          sm:text-6xl
+          md:text-7xl
+          xl:text-8xl
+          "
         >
           ABIDA
           <br />
@@ -29,15 +50,25 @@ export default function Hero() {
 
         {/* CLASS + LEVEL */}
 
-        <div className="mt-5 grid grid-cols-2 gap-10">
+        <div
+        className="
+        mt-8
 
+        grid
+        grid-cols-1
+
+        gap-8
+
+        sm:grid-cols-2
+        "
+        >
           <div>
 
-            <p className="font-terminal text-lg uppercase tracking-[0.35em] text-retro-gold">
+            <p className="font-terminal text-base sm:text-lg uppercase tracking-[0.35em] text-retro-gold">
               CLASS
             </p>
 
-            <p className="mt-3 font-body text-3xl text-ivory">
+            <p className="mt-3 font-body text-xl sm:text-2xl lg:text-3xl text-ivory">
               Software Engineer
             </p>
 
@@ -69,7 +100,18 @@ export default function Hero() {
             CURRENT QUEST
           </p>
 
-          <p className="mt-3 font-body text-2xl leading-10 text-ivory">
+          <p className="
+            max-w-2xl
+            mx-auto
+            mt-3 font-body 
+            text-lg
+            sm:text-xl
+            lg:text-2xl
+
+            leading-8
+            sm:leading-9
+            lg:leading-10 text-ivory
+          ">
             Looking for the next opportunity
             <br />
             to build impactful software.
@@ -83,7 +125,19 @@ export default function Hero() {
 
         {/* BUTTONS */}
 
-        <div className="mt-8 flex justify-center gap-8">
+        <div className="
+          mt-10
+
+          flex
+
+          flex-col
+
+          gap-4
+
+          sm:flex-row
+
+          sm:justify-center        
+        ">
 
           <RetroButton
             onClick={() =>
@@ -114,7 +168,7 @@ export default function Hero() {
 
         {/* SCROLL */}
 
-        <div className="mt-8 animate-bounce text-3xl text-retro-gold">
+        <div className="mt-8 sm:mt-10 animate-bounce text-3xl text-retro-gold">
           ↓
         </div>
 

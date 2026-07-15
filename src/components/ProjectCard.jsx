@@ -15,10 +15,28 @@ export default function ProjectCard({
   type = "desktop",
 }) {
   return (
-    <div className="border-y border-retro-gold/20 py-20">
+    <div
+      className="
+        border-y
+        border-retro-gold/20
 
-      <div className="grid items-center gap-16 xl:grid-cols-[1.45fr_1fr]">
+        py-12
+        md:py-16
+        lg:py-20
+      "
+    >
+      <div
+        className="
+          grid
 
+          items-center
+
+          gap-10
+          lg:gap-16
+
+          xl:grid-cols-[1.45fr_1fr]
+        "
+      >
         {/* LEFT */}
         
         <ProjectSlider
@@ -29,19 +47,47 @@ export default function ProjectCard({
 
         {/* RIGHT */}
 
-        <div>
+        <div
+          className="
+            text-center
 
-          <h3 className="font-retro text-5xl text-retro-gold">
+            xl:text-left
+          "
+        >
+          <h3 className="font-retro text-3xl sm:text-4xl lg:text-5xl text-retro-gold">
             {title}
           </h3>
 
-          <p className="mt-8 font-body text-2xl leading-10 text-ivory">
+          <p className="
+            mt-8 
+            font-body
+            text-ivory
+            mt-6
+
+            text-lg
+            sm:text-xl
+            lg:text-2xl
+
+            leading-8
+            lg:leading-10
+          ">
             {description}
           </p>
 
           {/* TECHNOLOGIES */}
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="
+            mt-8
+
+            flex
+
+            flex-wrap
+
+            justify-center
+            xl:justify-start
+
+            gap-3 
+          ">
 
             {technologies.map((tech) => (
               <span
@@ -52,11 +98,18 @@ export default function ProjectCard({
                   border-retro-gold/20
                   bg-deep-navy
 
-                  px-5
-                  py-3
+                  px-3
+                  sm:px-4
+                  lg:px-5
+
+                  py-2
+                  sm:py-3
+
+                  text-sm
+                  sm:text-base
+                  lg:text-lg
 
                   font-terminal
-                  text-lg
                   text-retro-gold
 
                   transition-all
@@ -73,7 +126,25 @@ export default function ProjectCard({
 
           {/* BUTTONS */}
 
-          <div className="mt-12 flex flex-wrap gap-5">
+          <div className="
+          mt-10
+
+          flex
+
+          flex-col
+
+          items-stretch
+
+          gap-4
+
+          sm:flex-row
+
+          sm:flex-wrap
+
+          sm:justify-center
+
+          xl:justify-start
+          ">
 
             {github && github !== "" && (
               <a

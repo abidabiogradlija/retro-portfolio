@@ -4,47 +4,86 @@ function Bullet() {
   return (
     <span
       className="
-        mt-2
-        mr-4
+        mt-1
+        mr-3
+
         flex
-        h-5
-        w-5
+
+        h-4
+        w-4
+
+        sm:h-5
+        sm:w-5
+
         shrink-0
+
         items-center
         justify-center
+
         rounded-full
+
         border-2
         border-retro-gold
       "
     >
-      <span className="h-2 w-2 rounded-full bg-retro-gold"></span>
+      <span
+        className="
+          h-1.5
+          w-1.5
+
+          sm:h-2
+          sm:w-2
+
+          rounded-full
+
+          bg-retro-gold
+        "
+      />
     </span>
   );
 }
 
 export default function Experience() {
   return (
-    <section className="bg-midnight py-32">
+    <section className="bg-midnight py-20 md:py-24 lg:py-32">
       <Container>
 
-        <h2 className="text-center font-retro text-5xl text-retro-gold">
+        <h2 className="text-center font-retro text-3xl sm:text-4xl md:text-5xl text-retro-gold">
           EXPERIENCE
         </h2>
 
-        <div className="mx-auto mt-16 max-w-5xl">
+        <div className="mx-auto mt-10 md:mt-16 max-w-5xl">
 
           {/* Internship */}
-          <div className="border-t border-retro-gold/20 py-10">
+          <div className="border-t border-retro-gold/20 py-8 sm:py-10">
 
             <div className="flex items-start">
               <Bullet />
 
-              <h3 className="font-retro text-3xl text-retro-gold">
+              <h3 className="font-retro text-xl sm:text-2xl lg:text-3xl text-retro-gold">
                 Professional Internship 2026 – INPUT Center, Zenica
               </h3>
             </div>
 
-            <p className="mt-6 ml-9 font-body text-xl leading-9 text-ivory">
+            <p
+              className="
+                mt-5
+                ml-7
+                sm:ml-9
+
+                font-body
+
+                text-base
+                sm:text-lg
+                lg:text-xl
+
+                leading-7
+                sm:leading-8
+                lg:leading-9
+
+                text-ivory
+              "
+            >
               Developed and customized WordPress websites, managed website
               content using the WordPress CMS, performed theme customization
               and basic website optimization, and collaborated with a team on
@@ -54,17 +93,35 @@ export default function Experience() {
           </div>
 
           {/* SocialPass */}
-          <div className="border-t border-retro-gold/20 py-10">
+          <div className="border-t border-retro-gold/20 py-8 sm:py-10">
 
             <div className="flex items-start">
               <Bullet />
 
-              <h3 className="font-retro text-3xl text-retro-gold">
+              <h3 className="font-retro text-xl sm:text-2xl lg:text-3xl text-retro-gold">
                 SocialPass – Event Management Platform
               </h3>
             </div>
 
-            <p className="mt-6 ml-9 font-body text-xl leading-9 text-ivory">
+            <p
+              className="
+                mt-5
+                ml-7
+                sm:ml-9
+
+                font-body
+
+                text-base
+                sm:text-lg
+                lg:text-xl
+
+                leading-7
+                sm:leading-8
+                lg:leading-9
+
+                text-ivory
+              "
+            >
               Independently developed a web platform for event organization
               and management. Defined the business logic, functional
               requirements, user roles, and user flows. Designed a responsive
@@ -75,17 +132,35 @@ export default function Experience() {
           </div>
 
           {/* Award */}
-          <div className="border-t border-retro-gold/20 py-10">
+          <div className="border-t border-retro-gold/20 py-8 sm:py-10">
 
             <div className="flex items-start">
               <Bullet />
 
-              <h3 className="font-retro text-3xl text-retro-gold">
+              <h3 className="font-retro text-xl sm:text-2xl lg:text-3xl text-retro-gold">
                 SCI&amp;TECH Challenge, Zenica
               </h3>
             </div>
 
-            <p className="mt-6 ml-9 font-body text-xl leading-9 text-ivory">
+            <p
+              className="
+                mt-5
+                ml-7
+                sm:ml-9
+
+                font-body
+
+                text-base
+                sm:text-lg
+                lg:text-xl
+
+                leading-7
+                sm:leading-8
+                lg:leading-9
+
+                text-ivory
+              "
+            >
               Awarded 1st Place in a science, technology, and innovation
               competition for high school students.
             </p>
@@ -93,66 +168,150 @@ export default function Experience() {
           </div>
 
           {/* Volunteering */}
-          <div className="border-t border-retro-gold/20 py-10">
+          <div className="border-t border-retro-gold/20 py-8 sm:py-10">
 
             <div className="flex items-start">
               <Bullet />
 
-              <h3 className="font-retro text-3xl text-retro-gold">
+              <h3 className="font-retro text-xl sm:text-2xl lg:text-3xl text-retro-gold">
                 IT Community Volunteering
               </h3>
             </div>
 
-            <p className="mt-6 ml-9 font-body text-xl leading-9 text-ivory">
+            <p
+              className="
+                mt-5
+                ml-7
+                sm:ml-9
+
+                font-body
+
+                text-base
+                sm:text-lg
+                lg:text-xl
+
+                leading-7
+                sm:leading-8
+                lg:leading-9
+
+                text-ivory
+              "
+            >
               Volunteer at the HammerIT Conferences (2023, 2024) and the
               SpinIT Conference (2024).
             </p>
 
-            <p className="mt-4 ml-9 font-body text-xl leading-9 text-ivory">
+            <p
+              className="
+                mt-5
+                ml-7
+                sm:ml-9
+
+                font-body
+
+                text-base
+                sm:text-lg
+                lg:text-xl
+
+                leading-7
+                sm:leading-8
+                lg:leading-9
+
+                text-ivory
+              "
+            >
               Volunteer with the Hastor Foundation since 2022.
             </p>
 
           </div>
 
           {/* Workshops */}
-          <div className="border-y border-retro-gold/20 py-10">
+          <div className="border-y border-retro-gold/20 py-8 sm:py-10">
 
             <div className="flex items-start">
               <Bullet />
 
-              <h3 className="font-retro text-3xl text-retro-gold">
+              <h3 className="font-retro text-xl sm:text-2xl lg:text-3xl text-retro-gold">
                 Workshops &amp; Training
               </h3>
             </div>
 
-            <div className="mt-6 ml-9 space-y-8">
+            <div className="mt-6 ml-9 space-y-6 sm:space-y-8">
 
               <div>
-                <p className="font-body text-xl text-retro-gold">
+                <p className="font-body text-lg sm:text-xl text-retro-gold">
                   • Genesis Project, Banja Luka
                 </p>
 
-                <p className="mt-2 font-body text-xl leading-9 text-ivory">
+                <p
+                  className="
+                    mt-2
+
+                    font-body
+
+                    text-base
+                    sm:text-lg
+                    lg:text-xl
+
+                    leading-7
+                    sm:leading-8
+                    lg:leading-9
+
+                    text-ivory
+                  "
+                >
                   Training on youth rights and social inclusion.
                 </p>
               </div>
 
               <div>
-                <p className="font-body text-xl text-retro-gold">
+                <p className="font-body text-lg sm:text-xl text-retro-gold">
                   • Kinderdorf Pestalozzi, Switzerland
                 </p>
 
-                <p className="mt-2 font-body text-xl leading-9 text-ivory">
+                <p
+                  className="
+                    mt-2
+
+                    font-body
+
+                    text-base
+                    sm:text-lg
+                    lg:text-xl
+
+                    leading-7
+                    sm:leading-8
+                    lg:leading-9
+
+                    text-ivory
+                  "
+                >
                   Two-week workshop on social skills development.
                 </p>
               </div>
 
               <div>
-                <p className="font-body text-xl text-retro-gold">
+                <p className="font-body text-lg sm:text-xl text-retro-gold">
                   • ZEDA Development Agency
                 </p>
 
-                <p className="mt-2 font-body text-xl leading-9 text-ivory">
+                <p
+                  className="
+                    mt-2
+
+                    font-body
+
+                    text-base
+                    sm:text-lg
+                    lg:text-xl
+
+                    leading-7
+                    sm:leading-8
+                    lg:leading-9
+
+                    text-ivory
+                  "
+                >
                   "I Am an Entrepreneur Too" Entrepreneurship Program
                   (Digital Marketing).
                 </p>
