@@ -15,7 +15,9 @@ export default function Hero() {
 
         {/* NAME */}
 
-        <h1 className="crt-title font-retro text-6xl leading-none md:text-7xl lg:text-8xl">
+        <h1 
+          className="crt-title font-retro text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
+        >
           ABIDA
           <br />
           BIOGRADLIJA
@@ -23,11 +25,11 @@ export default function Hero() {
 
         {/* TOP LINE */}
 
-        <div className="mx-auto mt-10 h-px w-full bg-retro-gold/20" />
+        <div className="mx-auto mt-8 h-px w-full bg-retro-gold/20" />
 
         {/* CLASS + LEVEL */}
 
-        <div className="mt-10 grid grid-cols-2 gap-10">
+        <div className="mt-8 grid grid-cols-2 gap-10">
 
           <div>
 
@@ -57,11 +59,11 @@ export default function Hero() {
 
         {/* MIDDLE LINE */}
 
-        <div className="mx-auto mt-10 h-px w-full bg-retro-gold/20" />
+        <div className="mx-auto mt-8 h-px w-full bg-retro-gold/20" />
 
         {/* QUEST */}
 
-        <div className="mt-10">
+        <div className="mt-8">
 
           <p className="font-terminal text-lg uppercase tracking-[0.35em] text-retro-gold">
             CURRENT QUEST
@@ -77,11 +79,11 @@ export default function Hero() {
 
         {/* BOTTOM LINE */}
 
-        <div className="mx-auto mt-10 h-px w-full bg-retro-gold/20" />
+        <div className="mx-auto mt-8 h-px w-full bg-retro-gold/20" />
 
         {/* BUTTONS */}
 
-        <div className="mt-12 flex justify-center gap-8">
+        <div className="mt-10 flex justify-center gap-8">
 
           <RetroButton
             onClick={() =>
