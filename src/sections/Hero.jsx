@@ -16,7 +16,7 @@ export default function Hero() {
         {/* NAME */}
 
         <h1 
-          className="crt-title font-retro text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none"
+          className="crt-title font-retro text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-none"
         >
           ABIDA
           <br />
