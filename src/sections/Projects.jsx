@@ -20,10 +20,18 @@ import corporeContact from "../assets/images/projects/corporesano/contact.png";
 
 import salonHome1 from "../assets/images/projects/hairsalon/home1.png";
 import salonHome2 from "../assets/images/projects/hairsalon/home2.png";
+import salonHome3 from "../assets/images/projects/hairsalon/home3.png";
+import salonContact from "../assets/images/projects/hairsalon/contact.png";
+import salonProducts from "../assets/images/projects/hairsalon/products.png";
 
 
 // REACT
 import vodovodDashboard from "../assets/images/projects/vodovod/dashboard.png";
+import vodovodBrojila from "../assets/images/projects/vodovod/brojila.png";
+import vodovodRacuni from "../assets/images/projects/vodovod/racuni.png";
+import vodovodKvar from "../assets/images/projects/vodovod/kvar.png";
+import vodovodKorisnici from "../assets/images/projects/vodovod/korisnici.png";
+
 import elabLogin from "../assets/images/projects/elab/login.png";
 import elabNalazi from "../assets/images/projects/elab/nalazi.png";
 import elabPacijent from "../assets/images/projects/elab/pacijent.png";
@@ -59,6 +67,71 @@ const projects = [
     ],
     github: "",
     liveDemo: "https://www.socialpass.net",
+  },
+  {
+    title: "Waterworks Information System",
+    type: "desktop",
+
+    description:
+      "Information system developed with React and Node.js for managing water utility operations and customer data.",
+    technologies: [
+      "React",
+      "Node.js",
+      "MySQL",
+    ],
+    images: [
+      vodovodDashboard,
+      vodovodBrojila,
+      vodovodRacuni,
+      vodovodKvar,
+      vodovodKorisnici,
+    ],
+    github: "https://github.com/abidabiogradlija/Waterworks-Vodovod",
+    liveDemo: "",
+  },
+
+  {
+    title: "Adore Hair Salon Management",
+    type: "desktop",
+
+    description:
+      "Modern responsive salon website with gallery, services and landing page built using TypeScript, CSS, MySql.",
+    technologies: [
+      "TypeScript",
+      "CSS3",
+    ],
+    images: [
+      salonHome1,
+      salonHome2,
+      salonHome3,
+      salonContact,
+      salonProducts,
+
+    ],
+    github: "https://github.com/abidabiogradlija/Web-Programiranje-Frizerski-Salon",
+    liveDemo: "",
+  },
+
+  {
+    title: "eLaboratory",
+    type: "desktop",
+
+    description:
+      "Healthcare application for patient login and laboratory result management with a clean and intuitive interface.",
+    technologies: [
+      "React",
+      "Node.js",
+      "MySQL",
+      "JavaScript",
+    ],
+    images: [
+      elabLogin,
+      elabNalazi,
+      elabPacijent,
+      elabPosiljka,
+    ],
+    github: "https://github.com/abidabiogradlija/elab",
+    liveDemo: "",
   },
 
   {
@@ -99,66 +172,6 @@ const projects = [
       corporeContact,
     ],
     github: "https://github.com/abidabiogradlija/HTML-CSS/tree/master/Corpore%20Sano",
-    liveDemo: "",
-  },
-
-  {
-    title: "Hair Salon Management",
-    type: "desktop",
-
-    description:
-      "Modern responsive salon website with gallery, services and landing page built using HTML, CSS and JavaScript.",
-    technologies: [
-      "TypeScript",
-      "CSS3",
-    ],
-    images: [
-      salonHome1,
-      salonHome2,
-    ],
-    github: "https://github.com/abidabiogradlija/Web-Programiranje-Frizerski-Salon",
-    liveDemo: "",
-  },
-
-  {
-    title: "Vodovod Information System",
-    type: "desktop",
-
-    description:
-      "Information system developed with React and Node.js for managing water utility operations and customer data.",
-    technologies: [
-      "React",
-      "Node.js",
-      "MySQL",
-      "JavaScript",
-
-    ],
-    images: [
-      vodovodDashboard,
-    ],
-    github: "https://github.com/abidabiogradlija/Waterworks-Vodovod",
-    liveDemo: "",
-  },
-
-  {
-    title: "eLaboratory",
-    type: "desktop",
-
-    description:
-      "Healthcare application for patient login and laboratory result management with a clean and intuitive interface.",
-    technologies: [
-      "React",
-      "Node.js",
-      "MySQL",
-      "JavaScript",
-    ],
-    images: [
-      elabLogin,
-      elabNalazi,
-      elabPacijent,
-      elabPosiljka,
-    ],
-    github: "https://github.com/abidabiogradlija/elab",
     liveDemo: "",
   },
 
