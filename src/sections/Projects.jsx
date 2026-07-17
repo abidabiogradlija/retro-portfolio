@@ -84,7 +84,6 @@ const projects = [
       vodovodBrojila,
       vodovodRacuni,
       vodovodKvar,
-      vodovodKorisnici,
     ],
     github: "https://github.com/abidabiogradlija/Waterworks-Vodovod",
     liveDemo: "",
@@ -105,8 +104,6 @@ const projects = [
       salonHome2,
       salonHome3,
       salonContact,
-      salonProducts,
-
     ],
     github: "https://github.com/abidabiogradlija/Web-Programiranje-Frizerski-Salon",
     liveDemo: "",
