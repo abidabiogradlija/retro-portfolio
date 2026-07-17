@@ -1,4 +1,4 @@
-const stars = Array.from({ length: 35 }, (_, index) => ({
+const stars = Array.from({ length: 50 }, (_, index) => ({
   id: index,
   top: `${Math.random() * 100}%`,
   left: `${Math.random() * 100}%`,

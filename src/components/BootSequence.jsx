@@ -21,7 +21,7 @@ export default function BootSequence({ onFinished }) {
   };
 
   return (
-    <div className="space-y-3 font-terminal text-2xl text-muted min-h-[220px]">
+    <div className="space-y-3 font-terminal text-base sm:text-lg md:text-xl lg:text-2xl text-muted min-h-[180px]">
       {bootMessages.map((message, index) => {
         if (index > currentMessage) return null;
 

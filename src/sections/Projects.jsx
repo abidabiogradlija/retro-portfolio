@@ -46,10 +46,10 @@ const projects = [
     description:
       "AI-assisted event platform for event creation, ticketing and attendee management with a responsive and modern user experience.",
     technologies: [
-      "React",
-      "Node.js",
-      "AI",
-      "Vercel",
+      "TypeScript",
+      "CSS",
+      "Stripe",
+      "Supabase",
     ],
     images: [
       socialHome,
@@ -70,6 +70,7 @@ const projects = [
     technologies: [
       ".NET MAUI",
       "C#",
+      "XAML",
       "SQLite",
     ],
     images: [
@@ -108,9 +109,8 @@ const projects = [
     description:
       "Modern responsive salon website with gallery, services and landing page built using HTML, CSS and JavaScript.",
     technologies: [
-      "HTML5",
+      "TypeScript",
       "CSS3",
-      "JavaScript",
     ],
     images: [
       salonHome1,
@@ -130,6 +130,8 @@ const projects = [
       "React",
       "Node.js",
       "MySQL",
+      "JavaScript",
+
     ],
     images: [
       vodovodDashboard,
@@ -147,6 +149,8 @@ const projects = [
     technologies: [
       "React",
       "Node.js",
+      "MySQL",
+      "JavaScript",
     ],
     images: [
       elabLogin,
@@ -195,7 +199,7 @@ const projects = [
     github: "",
     liveDemo: "",
     extraButton1: "HAIR SALON FIGMA",
-    extraButton1Link: "https://www.figma.com/design/6uHM0A3HfAW9ZLmXXnZPFE/Frizerski-salon?node-id=182-159&t=B0dzuCR9GHTKzRcK-1",
+    extraButton1Link: "https://www.figma.com/proto/6uHM0A3HfAW9ZLmXXnZPFE/Frizerski-salon?page-id=182%3A159&node-id=182-160&p=f&viewport=475%2C340%2C0.06&t=lvlzk7y1kDf1NhKd-1&scaling=contain&content-scaling=fixed&starting-point-node-id=182%3A160",
 
     extraButton2: "HEALTHCARE FIGMA",
     extraButton2Link: "https://www.figma.com/proto/o2UJwzsTAjuZ2rdu89VtEs/Zdravstveni-sistem?page-id=0%3A1&node-id=1-3&viewport=361%2C-918%2C0.23&t=EbguGaiOvhhKfr9Z-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&show-proto-sidebar=1",
