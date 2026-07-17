@@ -34,9 +34,7 @@ export default function ScreenFrame({
         <div
           className={`
             relative
-            flex
-            items-center
-            justify-center
+            w-full
             overflow-hidden
             bg-black
 
