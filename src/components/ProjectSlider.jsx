@@ -2,145 +2,300 @@ import ScreenFrame from "./ScreenFrame";
 import RetroMonitor from "./RetroMonitor";
 import { useEffect, useState } from "react";
 
-export default function ProjectSlider({ images, type = "desktop" }) {
+export default function ProjectSlider({
+  images,
+  type = "desktop",
+}) {
   const [current, setCurrent] = useState(0);
   const [previewOpen, setPreviewOpen] = useState(false);
 
   const previous = () => {
-    setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrent((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
   };
 
   const next = () => {
-    setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrent((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
   };
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (!previewOpen) return;
-      if (e.key === "Escape") setPreviewOpen(false);
-      if (e.key === "ArrowLeft") previous();
-      if (e.key === "ArrowRight") next();
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+  const handleKeyDown = (e) => {
+    if (!previewOpen) return;
+
+    if (e.key === "Escape") setPreviewOpen(false);
+
+    if (e.key === "ArrowLeft") previous();
+
+    if (e.key === "ArrowRight") next();
+  };
+
+  window.addEventListener("keydown", handleKeyDown);
+
+  return () =>
+    window.removeEventListener("keydown", handleKeyDown);
+
   }, [previewOpen, current]);
+  
 
   return (
     <div className="w-full">
+
+
       {/* MAIN IMAGE */}
+
       <div className="w-full">
-        <RetroMonitor type={type}>
-          <ScreenFrame type={type}>
-            <img
-              src={images[current]}
-              alt=""
-              onClick={() => setPreviewOpen(true)}
-              className="
-                cursor-zoom-in
-                w-full
-                h-full
-                object-cover
-                object-top
-              "
-            />
-          </ScreenFrame>
-        </RetroMonitor>
-      </div>
+
+  <RetroMonitor type={type}>
+
+  <ScreenFrame type={type}>
+  <img
+    src={images[current]}
+    alt=""
+    onClick={() => setPreviewOpen(true)}
+    className={`
+      cursor-zoom-in
+      mx-auto
+      object-contain
+
+        ${
+          type === "mobile"
+          ? "w-auto max-h-full"
+          : "max-w-full max-h-[520px]"
+        }
+    `}
+  />
+  </ScreenFrame>
+
+  </RetroMonitor>
+
+  </div>
 
       {/* THUMBNAILS */}
-      {images.length > 1 && (
-        <div className="mt-8">
+          {images.length > 1 && (
+
+          <div className="mt-8">
+
           <div className="flex items-center justify-center gap-6">
-            <button
-              onClick={previous}
-              className="font-terminal text-3xl text-retro-gold transition hover:scale-125"
-            >
-              ←
-            </button>
 
-            <div className="flex max-w-full gap-2 sm:gap-4 overflow-x-auto overflow-y-hidden px-2 scrollbar-hide">
-              {images.map((image, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    setCurrent(index);
-                    setPreviewOpen(true);
-                  }}
-                  className={`
-                    overflow-hidden
-                    rounded-lg
-                    border-2
-                    transition-all
-                    ${
-                      current === index
-                        ? "border-retro-gold scale-105"
-                        : "border-retro-gold/20 hover:border-retro-gold"
-                    }
-                  `}
-                >
-                  <img
-                    src={image}
-                    alt=""
-                    className="h-12 w-20 sm:h-16 sm:w-24 bg-black object-cover object-top"
-                  />
-                </button>
-              ))}
-            </div>
+          <button
+          onClick={previous}
+          className="
+          font-terminal
+          text-3xl
+          text-retro-gold
+          transition
+          hover:scale-125
+          "
+          >
+           ←
+          </button>
 
-            <button
-              onClick={next}
-              className="font-terminal text-2xl sm:text-3xl text-retro-gold transition hover:scale-125"
+          <div
+            className="
+              flex
+
+              max-w-full
+
+              gap-2
+              sm:gap-4
+
+              overflow-x-auto
+              overflow-y-hidden
+
+              px-2
+
+              scrollbar-hide
+            "
+          >
+
+           {images.map((image, index) => (
+
+           <button
+            key={index}
+            onClick={() => {
+              setCurrent(index);
+              setPreviewOpen(true);
+            }}
+            className={`
+              overflow-hidden
+
+              rounded-lg
+
+              border-2
+
+              transition-all
+
+              ${
+                current === index
+                  ? "border-retro-gold scale-105"
+                  : "border-retro-gold/20 hover:border-retro-gold"
+              }
+            `}
             >
-              →
-            </button>
-          </div>
+
+            <img
+              src={image}
+              alt=""
+              className="
+                h-12
+                w-20
+
+                sm:h-16
+                sm:w-24
+
+                bg-black
+
+                object-contain
+              "
+            />
+
+          </button>
+
+        ))}
+
         </div>
+
+        <button
+          onClick={next}
+          className="
+          font-terminal
+          text-2xl
+          sm:text-3xl
+          text-retro-gold
+          transition
+          hover:scale-125
+          "
+        >
+         →
+         </button>
+
+        </div>
+
+        </div>
+
       )}
 
       {previewOpen && (
-        <div
-          onClick={() => setPreviewOpen(false)}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/95 p-8"
-        >
-          {images.length > 1 && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                previous();
-              }}
-              className="absolute left-2 sm:left-6 text-4xl sm:text-6xl text-retro-gold transition hover:scale-125"
-            >
-              ←
-            </button>
-          )}
 
-          <img
-            src={images[current]}
-            alt=""
-            onClick={(e) => e.stopPropagation()}
-            className="max-h-[90vh] max-w-[90vw] object-contain"
-          />
+      <div
+      onClick={() => setPreviewOpen(false)}
+      className="
+      fixed
+      inset-0
+      z-[9999]
 
-          {images.length > 1 && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                next();
-              }}
-              className="absolute right-2 sm:right-6 text-4xl sm:text-6xl text-retro-gold transition hover:scale-125"
-            >
-              →
-            </button>
-          )}
+      flex
+      items-center
+      justify-center
 
-          <button
-            onClick={() => setPreviewOpen(false)}
-            className="absolute top-3 right-4 sm:top-6 sm:right-8 text-3xl sm:text-5xl text-retro-gold transition hover:rotate-90"
-          >
-            ✕
-          </button>
-        </div>
-      )}
+      bg-black/95
+
+      p-8
+      "
+      >
+
+    {/* LEFT */}
+
+    {images.length > 1 && (
+
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          previous();
+        }}
+        className="
+          absolute
+          left-2
+          sm:left-6
+
+          text-4xl
+          sm:text-6xl
+          text-retro-gold
+
+          transition
+
+          hover:scale-125
+        "
+      >
+        ←
+      </button>
+
+    )}
+
+    {/* IMAGE */}
+
+    <img
+      src={images[current]}
+      alt=""
+      onClick={(e) => e.stopPropagation()}
+      className="
+        max-h-[90vh]
+        max-w-[90vw]
+
+        object-contain
+      "
+    />
+
+    {/* RIGHT */}
+
+    {images.length > 1 && (
+
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          next();
+        }}
+        className="
+          absolute
+          right-2
+          sm:right-6
+
+          text-4xl
+          sm:text-6xl
+
+          text-retro-gold
+
+          transition
+
+          hover:scale-125
+        "
+      >
+        →
+      </button>
+
+    )}
+
+    {/* CLOSE */}
+
+    <button
+      onClick={() => setPreviewOpen(false)}
+      className="
+        absolute
+        top-3
+        right-4
+
+        sm:top-6
+        sm:right-8
+
+        text-3xl
+        sm:text-5xl
+
+        text-retro-gold
+
+        transition
+
+        hover:rotate-90
+      "
+    >
+      ✕
+    </button>
     </div>
+    )}
+      
+    </div>
+    
   );
 }
