@@ -10,8 +10,8 @@ export default function RetroMonitor({
         w-full
         ${
           type === "desktop"
-          ? "max-w-[1050px]"
-          : "max-w-[420px] sm:max-w-[520px] md:max-w-[650px]"
+          ? "max-w-[700px] lg:max-w-[900px]"
+          : "max-w-[320px] sm:max-w-[380px] md:max-w-[420px]"
         }
       `}
     >
@@ -254,15 +254,14 @@ export default function RetroMonitor({
 
       {/* FEET */}
 
-      <div className="relative h-16">
+      <div className="flex justify-center gap-16 sm:gap-24 md:gap-32 lg:gap-40 pt-0">
 
         <div
           className="
-            absolute
-            left-28
-
-            h-16
-            w-[6px]
+            h-14
+            sm:h-16
+            w-[5px]
+            sm:w-[6px]
 
             rotate-[18deg]
 
@@ -274,11 +273,10 @@ export default function RetroMonitor({
 
         <div
           className="
-            absolute
-            right-28
-
-            h-16
-            w-[6px]
+            h-14
+            sm:h-16
+            w-[5px]
+            sm:w-[6px]
 
             -rotate-[18deg]
 

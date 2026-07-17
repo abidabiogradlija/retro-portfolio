@@ -55,17 +55,14 @@ export default function ProjectSlider({
     src={images[current]}
     alt=""
     onClick={() => setPreviewOpen(true)}
-    className={`
+    className="
+      absolute
+      inset-0
+      h-full
+      w-full
       cursor-zoom-in
-      mx-auto
-      object-contain
-
-        ${
-          type === "mobile"
-          ? "w-auto max-h-full"
-          : "max-w-full max-h-[520px]"
-        }
-    `}
+      object-cover
+    "
   />
   </ScreenFrame>
 
