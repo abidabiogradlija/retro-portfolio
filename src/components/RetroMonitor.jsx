@@ -25,11 +25,11 @@ export default function RetroMonitor({
 
           grid
 
-          grid-cols-[1fr_70px]
-          sm:grid-cols-[1fr_85px]
+          grid-cols-[1fr_48px]
+          sm:grid-cols-[1fr_70px]
           lg:grid-cols-[1fr_105px]
 
-          gap-3
+          gap-2
           sm:gap-4
           lg:gap-5
 
@@ -153,16 +153,19 @@ export default function RetroMonitor({
 
           <div className="mt-3 flex flex-col gap-[5px]">
 
-            {Array.from({ length: 16 }).map((_, index) => (
+            {Array.from({ length: 10 }).map((_, index) => (
 
               <div
                 key={index}
                 className="
-                  h-[2px] w-8
-                  sm:w-10
-                  md:w-12
-                  lg:w-14 rounded-full bg-retro-gold/60
-                  "
+                  h-[2px]
+                  w-5
+                  sm:w-8
+                  md:w-10
+                  lg:w-14
+                  rounded-full
+                  bg-retro-gold/60
+                "
               />
 
             ))}
@@ -173,13 +176,14 @@ export default function RetroMonitor({
 
           <div
             className="
-              mt-8
+              mt-4
+              sm:mt-8
 
               flex
-              h-12
-              w-12
-              sm:h-14
-              sm:w-14
+              h-8
+              w-8
+              sm:h-12
+              sm:w-12
               lg:h-16
               lg:w-16
 
@@ -188,14 +192,15 @@ export default function RetroMonitor({
 
               rounded-full
 
-              border-4
+              border-[3px]
+              sm:border-4
               border-retro-gold
 
               bg-[#24375F]
             "
           >
 
-            <div className="h-2 w-2 rounded-full bg-retro-gold" />
+            <div className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-retro-gold" />
 
           </div>
 
@@ -203,13 +208,14 @@ export default function RetroMonitor({
 
           <div
             className="
-              mt-6
+              mt-3
+              sm:mt-6
 
               flex
-              h-10
-              w-10
-              sm:h-11
-              sm:w-11
+              h-7
+              w-7
+              sm:h-10
+              sm:w-10
               lg:h-12
               lg:w-12
 
@@ -218,14 +224,15 @@ export default function RetroMonitor({
 
               rounded-full
 
-              border-4
+              border-[3px]
+              sm:border-4
               border-retro-gold
 
               bg-[#24375F]
             "
           >
 
-            <div className="h-2 w-2 rounded-full bg-retro-gold" />
+            <div className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-retro-gold" />
 
           </div>
 
@@ -233,18 +240,22 @@ export default function RetroMonitor({
 
           <div
             className="
-              mt-8
+              mt-4
+              sm:mt-8
 
-              h-2
-              w-2
-              sm:h-3
-              sm:w-3
+              h-1.5
+              w-1.5
+              sm:h-2
+              sm:w-2
+              lg:h-3
+              lg:w-3
 
               rounded-full
 
               bg-red-500
 
-              shadow-[0_0_12px_red]
+              shadow-[0_0_8px_red]
+              sm:shadow-[0_0_12px_red]
             "
           />
 
