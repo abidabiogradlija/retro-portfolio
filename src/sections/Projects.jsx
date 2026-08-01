@@ -54,8 +54,8 @@ const projects = [
     description:
       "AI-assisted event platform for event creation, ticketing and attendee management with a responsive and modern user experience.",
     technologies: [
+      "Next.js",
       "TypeScript",
-      "CSS",
       "Stripe",
       "Supabase",
     ],
@@ -90,14 +90,16 @@ const projects = [
   },
 
   {
-    title: "Adore Hair Salon Management",
+    title: "Hair Salon",
     type: "desktop",
 
     description:
       "Modern responsive salon website with gallery, services and landing page built using TypeScript, CSS, MySql.",
     technologies: [
+      "Next.js",
       "TypeScript",
-      "CSS3",
+      "Stripe",
+      "Supabase",
     ],
     images: [
       salonHome1,
